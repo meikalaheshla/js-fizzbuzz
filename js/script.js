@@ -14,20 +14,26 @@
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 
 
-
+let value = ''
 for (let i = 1; i <= 100; i++) {
 
     if (i % 5 === 0 && i % 3 === 0) {
-        console.log('Fizz')
+        value += ' FizzBuzz'
+        // console.log('Fizz')
 
     } else if (i % 5 === 0) {
-        console.log('Buzz')
+        value += ' Buzz'
+        // console.log('Buzz')
 
     } else if (i % 3 === 0) {
-        console.log('FizzBuzz')
+        value += ' Fizz'
+
+        // console.log('FizzBuzz')
 
     } else {
-        console.log(i)
+
+        value += ` ${i}`
     }
 }
+console.log(value)
 
