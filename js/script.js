@@ -43,26 +43,26 @@ console.log(value)*/
 const box = document.getElementById('contenitore')
 
 
-let value = ''
+let myBlock = ''
 for (let i = 1; i <= 100; i++) {
 
     if (i % 5 === 0 && i % 3 === 0) {
-        value += `<div class="col "><div class="bg-FizzBuzz"'> FizzBuzz</div></div>`
+        myBlock += `<div class="col "><div class="bg-FizzBuzz"'> FizzBuzz</div></div>`
 
 
 
     } else if (i % 5 === 0) {
-        value += `<div class="col "><div class="bg-Buzz"'> Buzz</div></div>`
+        myBlock += `<div class="col "><div class="bg-Buzz"'> Buzz</div></div>`
 
 
     } else if (i % 3 === 0) {
-        value += `<div class="col "><div class="bg-Fizz"'> Fizz</div></div>`
+        myBlock += `<div class="col "><div class="bg-Fizz"'> Fizz</div></div>`
 
 
 
     } else {
 
-        value += `<div class="col "><div class="bg-number"'> ${i}</div></div>`
+        myBlock += `<div class="col "><div class="bg-number"'> ${i}</div></div>`
     }
 }
-box.innerHTML = value
+box.innerHTML = myBlock
