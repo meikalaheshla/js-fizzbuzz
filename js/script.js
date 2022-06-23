@@ -13,27 +13,56 @@
 // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 
-
+/*
 let value = ''
 for (let i = 1; i <= 100; i++) {
 
     if (i % 5 === 0 && i % 3 === 0) {
         value += ' FizzBuzz'
-        // console.log('Fizz')
+
 
     } else if (i % 5 === 0) {
         value += ' Buzz'
-        // console.log('Buzz')
+
 
     } else if (i % 3 === 0) {
         value += ' Fizz'
 
-        // console.log('FizzBuzz')
+
 
     } else {
 
         value += ` ${i}`
     }
 }
-console.log(value)
+console.log(value)*/
+// -------------------------------------------------------------------------------------------------------------------
 
+// BONUS
+
+const box = document.getElementById('contenitore')
+
+
+let value = ''
+for (let i = 1; i <= 100; i++) {
+
+    if (i % 5 === 0 && i % 3 === 0) {
+        value += `<div class="col "><div class="bg-FizzBuzz"'> FizzBuzz</div></div>`
+
+
+
+    } else if (i % 5 === 0) {
+        value += `<div class="col "><div class="bg-Buzz"'> Buzz</div></div>`
+
+
+    } else if (i % 3 === 0) {
+        value += `<div class="col "><div class="bg-Fizz"'> Fizz</div></div>`
+
+
+
+    } else {
+
+        value += `<div class="col "><div class="bg-number"'> ${i}</div></div>`
+    }
+}
+box.innerHTML = value
